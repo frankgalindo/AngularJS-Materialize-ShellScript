@@ -1,0 +1,21 @@
+● isc-dhcp-server.service - ISC DHCP IPv4 server
+   Loaded: loaded (/lib/systemd/system/isc-dhcp-server.service; enabled; vendor preset: enabled)
+   Active: active (running) since S�b 2017-03-11 15:57:45 BRT; 7min ago
+     Docs: man:dhcpd(8)
+ Main PID: 1121 (dhcpd)
+    Tasks: 1
+   Memory: 11.7M
+      CPU: 0
+   CGroup: /system.slice/isc-dhcp-server.service
+           └─1121 dhcpd -user dhcpd -group dhcpd -f -4 -pf /run/dhcp-server/dhcpd.pid -cf /etc/dhcp/dhcpd.conf enp0s3
+
+Mar 11 15:57:48 ubuntu sh[1121]: Sending on   Socket/fallback/fallback-net
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Multiple interfaces match the same shared network: enp0s3 enp0s8
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Multiple interfaces match the same subnet: enp0s3 enp0s8
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Multiple interfaces match the same shared network: enp0s3 enp0s8
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Multiple interfaces match the same subnet: enp0s3 enp0s8
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Multiple interfaces match the same shared network: enp0s3 enp0s8
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Listening on LPF/enp0s3/08:00:27:51:28:68/192.168.50.0/24
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Sending on   LPF/enp0s3/08:00:27:51:28:68/192.168.50.0/24
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Sending on   Socket/fallback/fallback-net
+Mar 11 15:57:48 ubuntu dhcpd[1121]: Server starting service.

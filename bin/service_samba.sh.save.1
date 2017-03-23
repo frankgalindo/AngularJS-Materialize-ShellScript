@@ -1,0 +1,58 @@
+#!/bin/bash
+echo $1
+re = $1
+function teste(){
+	re=0
+	echo "$1"
+	RESETA=$1
+	GRUPO=$2
+	PERMISSAO=$3
+	NOME_DIRETORIO=$4
+	NOVO_DIRETORIO=$5
+#	echo $RESETA
+}
+
+function instala(){
+	echo "instalado"
+	echo "$2"
+}
+
+teste
+instala
+echo "$1"
+echo "$re"
+#service_uteis_instalado.sh 1
+#echo $NOVO_DIRETORIO
+#echo $RESETA
+#echo $GRUPO
+#echo $PERMISSAO
+#echo $NOME_DIRETORIO
+#echo $NOVO_DIRETORIO
+#cd /etc/samba
+#service_uteis_backup.sh smb.conf
+#if [ $RESETA -eq 1 ]
+#then
+#    echo "[global]" > smb.conf
+#    echo "" >> smb.conf
+#    echo "	workgroup = $GRUPO" >> smb.conf
+#    echo "	security = user" >> smb.conf
+#    if [ $PERMISSAO -eq 1 ]
+#    then
+#	 echo "	map to guest = Bad Password" >> smb.conf
+#    fi
+#	echo ""
+#fi
+#if [ $NOVO_DIRETORIO -eq 1 ]
+#	then
+#		echo $NOME_DIRETORIO
+#		mkdir /home/$NOME_DIRETORIO
+#		chmod 777 /home/$NOME_DIRETORIO
+#		hora="$(date +'%d-%m-%Y-%H:%M')"
+#		echo "Pasta $NOME_DIRETORIO criada em $hora" > /home/$NOME_DIRETORIO/log.txt
+#    	fi
+#echo "[$NOME_DIRETORIO]" >> smb.conf
+#echo "    path=/home/$NOME_DIRETORIO" >> smb.conf
+#echo "    public=yes" >> smb.conf
+#echo "    writeable=yes" >> smb.conf
+#echo "	  avaiable = yes" >> smb.conf
+#echo "    browseable=yes" >> smb.conf

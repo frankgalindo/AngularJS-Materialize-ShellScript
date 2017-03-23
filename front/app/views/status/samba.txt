@@ -1,0 +1,18 @@
+# Global parameters
+[global]
+	workgroup = FATECOSASCO
+	security = USER
+	map to guest = Bad Password
+	idmap config * : backend = tdb
+
+
+[fatecosasco]
+	path = /home/fatecosasco
+	read only = No
+	guest ok = Yes
+
+
+[malaqueas]
+	path = /home/malaqueas
+	read only = No
+	guest ok = Yes

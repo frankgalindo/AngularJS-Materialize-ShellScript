@@ -1,0 +1,68 @@
+
+    <main class="samba ">
+        <nav class="blue z-depth-3 " style="margin-bottom:30px">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="/servico" class="breadcrumb" style="margin-left:5%">Serviços</a>
+                    <a href="/samba" class="breadcrumb">Samba</a>
+                    <a href="#!" class="breadcrumb">Configuração</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <form  class="s12" ng-submit="enviaSamba()">
+
+                <div class="row">
+                    <label class="col s10" style="margin-left:2%">Remover compartilhamentos existentes?</label>
+                    <br>
+                    <input  class="with-gap center" name="group1" type="radio" id="on"  ng-model="existeresult" value="1"/>
+                    <label for="on" style="margin-left:3%">SIM</label>
+
+
+                    <input class="with-gap center" name="group1" type="radio" id="off"  ng-model="existeresult" value="0"/>
+                    <label for="off">NÂO</label>
+
+                    <input type="text" value="{{existeresult}}" hidden id="resultado"/>
+
+                </div>
+
+                <div class="input-field col s10">
+                    <input id="grupo" type="text" class="validate" style="width:90%; margin-left:5%" name="grupo" >
+                    <label for="grupo" style="margin-left:2%">Grupo</label>
+                </div>
+
+                <div class="input-field col s10">
+                    <input id="permissao" type="text" class="validate" style="width:90%; margin-left:5%" name="permissao" value="1" disabled>
+                    <label for="permissao" style="margin-left:2%">Permissão</label>
+                </div>
+
+                <div class="input-field col s10">
+                    <input id="caminho" type="text" class="validate" style="width:90%; margin-left:5%" name="Caminho" >
+                    <label for="caminho" style="margin-left:2%">Caminho</label>
+                </div>
+
+                <div class="row">
+                    <label class="col s10" style="margin-left:2%">O caminho já existe?</label>
+                    <br>
+                    <input  class="with-gap center" name="group2" type="radio" id="onCaminho"  ng-model="caminhoresult" value="1"/>
+                    <label for="onCaminho" style="margin-left:3%">SIM</label>
+
+
+                    <input class="with-gap center" name="group2" type="radio" id="offCaminho"  ng-model="caminhoresult" value="0"/>
+                    <label for="offCaminho">NÂO</label>
+
+                    <input type="text" value="{{caminhoresult}}" hidden id="caminhoresult"/>
+
+                </div>
+
+                <div class="center">
+                    <input type="submit" class="btn blue ">
+                </div>
+
+            </form>
+
+
+
+
+    </main>

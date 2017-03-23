@@ -1,0 +1,49 @@
+#!/bin/bash
+
+function instala_DHCP(){
+	#apt-get upgrade # da upgrade nos repositorios
+	#apt-get install isc-dhcp-server  -y #baixa e instala o VSFTP
+}
+
+function conf_DHCP(){
+
+	osimpress_uteis_backup.sh /etc/dhcp/dhcpd.conf
+	echo -e "ddns-update-style none;\noption domain-name 'home';\noption domain-name-servers $DNS1, $DNS2;\ndefault-lease-time 600;\nmax-lease-time 7200;\nauthoritative;\nlog-facility local7;\nsubnet $SUBNET netmask $NETMASK {\nrange $RANGE1 $RANGE2;\noption routers $GATEWAY;\n}" > /etc/dhcp/dhcpd.conf
+
+	osimpress_uteis_backup.sh /etc/default/isc-dhcp-server
+	rm /etc/default/isc-dhcp-server
+	echo INTERFACES=$INTERFACE > /etc/default/isc-dhcp-server
+
+	service isc-dhcp-server restart
+}
+
+function recebe_valor(){
+
+		DNS1=$1( dialog --stdout --inputbox 'Digite o servidor de DNS primario:' 0 0 )
+		DNS2=$2( dialog --stdout --inputbox 'Digite o servidor de DNS secundario:' 0 0 )
+		SUBNET=$3( dialog --stdout --inputbox 'Digite o endereco de rede:' 0 0 )
+		NETMASK=$4( dialog --stdout  --inputbox 'Digite a mascara:' 0 0 )
+		RANGE1=$5( dialog --stdout --inputbox 'Digite o inicio do range:' 0 0 )
+		RANGE2=$6( dialog --stdout --inputbox 'Digite o final do range:' 0 0 )
+
+		INTERFACE=$( dialog --stdout --inputbox 'Digite a interface a ser usada:' 0 0 )
+		echo $INTERFACE
+}
+
+
+osimpress_uteis_instalado.sh 4 > /home/temp
+
+if [ 'grep existe /home/temp' ] then
+
+	instala_DHCP
+	recebe_valor
+	conf_DHCP
+	rm /home/temp
+
+else
+
+	recebe_valor
+	conf_DHCP #configura o DHCP
+
+fi
+

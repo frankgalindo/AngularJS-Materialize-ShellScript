@@ -1,0 +1,33 @@
+
+    <main class="ftp ">
+        <nav class="blue z-depth-3 " style="margin-bottom:30px">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="/servico" class="breadcrumb" style="margin-left:5%">Serviços</a>
+                    <a href="/gw" class="breadcrumb">Gateway</a>
+                    <a href="#!" class="breadcrumb">Configuração</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="center" style="margin-top:50%">
+
+            <form ng-submit="enviaGW()" >
+
+
+                <input class="with-gap center" name="group1" type="radio" id="on"  ng-model="resultado" value="1"/>
+                <label for="on">ON</label>
+
+
+                <input class="with-gap center" name="group1" type="radio" id="off"  ng-model="resultado" value="0"/>
+                <label for="off">OFF</label>
+
+                <input type="text" value="{{resultado}}" hidden id="resultado"/>
+
+                <br><br>
+                <input type="submit" value="submit" class="btn blue " style="margin-top:5%;">
+            </form>
+            
+        </div>
+
+    </main>

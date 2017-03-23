@@ -1,0 +1,14 @@
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: active (running) since S�b 2017-03-11 15:57:49 BRT; 7min ago
+ Main PID: 1109 (sshd)
+    Tasks: 1
+   Memory: 3.8M
+      CPU: 0
+   CGroup: /system.slice/ssh.service
+           └─1109 /usr/sbin/sshd -D
+
+Mar 11 15:57:44 ubuntu systemd[1]: Starting OpenBSD Secure Shell server...
+Mar 11 15:57:49 ubuntu sshd[1109]: Server listening on 0.0.0.0 port 22.
+Mar 11 15:57:49 ubuntu sshd[1109]: Server listening on :: port 22.
+Mar 11 15:57:49 ubuntu systemd[1]: Started OpenBSD Secure Shell server.

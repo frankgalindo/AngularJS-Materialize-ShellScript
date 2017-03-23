@@ -1,0 +1,131 @@
+html {
+    background: -webkit-linear-gradient(180deg, white, #6cbbf9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(180deg, white, #6cbbf9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(180deg, white, #6cbbf9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, white, #6cbbf9); /* Standard syntax */
+    height: 100%
+}
+
+body {
+    background-color: #f2f2f2;
+    min-height: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    font-family: Roboto, -apple-system-font, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+.home {
+    
+	background: -webkit-linear-gradient(180deg, white, #6cbbf9); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(180deg, white, #6cbbf9); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(180deg, white, #6cbbf9); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, white, #6cbbf9); /* Standard syntax */
+
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.home h1 {
+    #background: #ffb300;
+    #color: #fff;
+    margin-top: auto;
+    margin-bottom: 1.25em;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0;
+    text-transform: uppercase
+}
+
+.home .row {
+    margin-bottom: 2.5em
+}
+
+.circulo{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    z-index:5;
+    background:#000;
+    position:relative;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .circulo .icon{
+        position: relative;
+        /*margin-left: -28px;*/
+        /*left: 50%;*/
+        margin-top: -28px;
+        top:50%;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .circulo .icon{
+        position: relative;
+        /*margin-left: -30px;*/
+        /*left: 50%;*/
+        margin-top: -30px;
+        top:50%;
+    }
+
+
+}
+
+.circulo .material-icons { color: rgba(255, 255, 255, 1); }
+
+.titulo {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center
+}
+
+.servicos .circulo {
+    width:149px;
+    height:149px;
+    border-radius:50%;
+    margin-top: 15%;
+}
+
+.btn-xlarge {
+    height: 130px;
+    width: 130px;
+    line-height: 130px;
+}
+
+.fundo-samba{
+    background-image: url(../images/Samba.png);
+	bolder: -2px;
+}
+.fundo-ssh{
+    background-image: url(../images/SSH.png);
+	bolder: -20px;
+}
+.fundo-ftp{
+    background-image: url(../images/FTP.png);
+}
+.fundo-dhcp{
+    background-image: url(../images/DHCP.png);
+}
+.fundo-gw{
+    background-image: url(../images/GW.png);
+}
+.fundo-tool{
+    background-image: url(../images/TOOLS.png);
+}
+
+.LogoInicio{
+	position: fixed;
+}

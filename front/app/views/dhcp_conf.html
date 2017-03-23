@@ -1,0 +1,74 @@
+ <main class="ftp ">
+        <nav class="blue z-depth-3 " style="margin-bottom:30px">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="/servico" class="breadcrumb" style="margin-left:5%">Serviços</a>
+                    <a href="/dhcp" class="breadcrumb">DHCP</a>
+                    <a href="" class="breadcrumb" disabled="true">Configuração</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <form  class="s12" ng-submit="enviar()">
+
+		<div class="input-field col s10">
+                    <input id="dominio" type="text" class="validate" style="width:90%; margin-left:5%" name="dominio">
+                    <label for="dominio" style="margin-left:2%">Dominio</label>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="dns1" type="text" class="validate" name="dns1" id="dns1" >
+                        <label for="dns1">DNS Primario</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="dns2" type="text" class="validate" name="dns2">
+                        <label for="dns2">DNS Secundario</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="rede" type="text" class="validate" name="rede">
+                        <label for="rede">ID da Rede</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="mask" type="text" class="validate" name="mask">
+                        <label for="mask">Mascara (decimal)</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="firstIP" type="text" class="validate" name="firstIP">
+                        <label for="firstIP">Primeiro IP</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="lastIP" type="text" class="validate" name="lastIP">
+                        <label for="lastIP">Último IP</label>
+                    </div>
+                </div>
+
+                <div class="input-field col s10">
+                    <input id="gw" type="text" class="validate" style="width:90%; margin-left:5%" name="gw">
+                    <label for="gw" style="margin-left:2%">Gateway</label>
+                </div>
+
+                <div class="input-field col s10">
+                    <input id="int" type="text" class="validate" style="width:90%; margin-left:5%" name="int" value="enp0s3">
+                    <label for="int" style="margin-left:2%">Interface</label>
+                </div>
+
+                <div class="center">
+                    <input type="submit" class="btn blue ">
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+
+    </main>

@@ -1,0 +1,13 @@
+● vsftpd.service - vsftpd FTP server
+   Loaded: loaded (/lib/systemd/system/vsftpd.service; enabled; vendor preset: enabled)
+   Active: active (running) since S�b 2017-03-11 15:57:45 BRT; 7min ago
+  Process: 1110 ExecStartPre=/bin/mkdir -p /var/run/vsftpd/empty (code=exited, status=0/SUCCESS)
+ Main PID: 1122 (vsftpd)
+    Tasks: 1
+   Memory: 1.6M
+      CPU: 0
+   CGroup: /system.slice/vsftpd.service
+           └─1122 /usr/sbin/vsftpd /etc/vsftpd.conf
+
+Mar 11 15:57:44 ubuntu systemd[1]: Starting vsftpd FTP server...
+Mar 11 15:57:45 ubuntu systemd[1]: Started vsftpd FTP server.
