@@ -1,7 +1,11 @@
 # AngularJS-Materialize-ShellScript
 Usando angular para fazer requisições a um "endpoint" feito em CGI e ShellScript feito para fazer configurações de nivel de serviço no servidor. Design do front usando Materialize.
 
-Servidor: Ubuntu LTS 16
+Angular 1.5.9
+jquery 2.1.1
+materialize 0.97.8
+Servidor¹: Ubuntu LTS 16
+
 OBS¹: A implementação dessa aplicação requer diversas configurações no servidor, tais configurações são muitos extenças para serem mencionadas aqui. Caso Você queira usar o sistema entre em contato comigo para que eu possa te explicar diretamente ;) .
 
 Os arquivos da pasta "/bin" são script em shell que ficam na pasta /bin do servidor para que possam ser executado de qualquer path do servidor, todos tem permissão 777.
