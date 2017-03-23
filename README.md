@@ -19,5 +19,6 @@ OBS²: Para visualizar o front corretamente é nescessario hospeda-lo no apache,
 Projeto feito para a materia de Linguagem de Programção para ambients de rede III do curso de Redes de computadores da FATEC OSASCO.
 
 Integrantes do projeto:
-         Leonardo Paganelli - https://br.linkedin.com/in/leonardo-paganelli - github.com/LeonardoPaganelli
-         Frank Wendel - https://br.linkedin.com/in/frankwendel - github.com/FrankWendel
+
+Leonardo Paganelli - https://br.linkedin.com/in/leonardo-paganelli - github.com/LeonardoPaganelli
+Frank Wendel - https://br.linkedin.com/in/frankwendel - github.com/FrankWendel
